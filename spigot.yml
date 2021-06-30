@@ -1,0 +1,189 @@
+# This is the main configuration file for Spigot.
+# As you can see, there's tons to configure. Some options may impact gameplay, so use
+# with caution, and make sure you know what each option does before configuring.
+# For a reference for any variable inside this file, check out the Spigot wiki at
+# http://www.spigotmc.org/wiki/spigot-configuration/
+# 
+# If you need help with the configuration or have any questions related to Spigot,
+# join us at the IRC or drop by our forums and leave a post.
+# 
+# IRC: #spigot @ irc.spi.gt ( http://www.spigotmc.org/pages/irc/ )
+# Forums: http://www.spigotmc.org/
+
+config-version: 12
+settings:
+  debug: false
+  save-user-cache-on-stop-only: true
+  log-villager-deaths: false
+  moved-wrongly-threshold: 0.0625
+  sample-count: 12
+  user-cache-size: 1000
+  player-shuffle: 0
+  netty-threads: 4
+  moved-too-quickly-multiplier: 10.0
+  bungeecord: false
+  timeout-time: 20
+  restart-on-crash: true
+  restart-script: PURPURSTART.bat
+  attribute:
+    maxHealth:
+      max: 2048.0
+    movementSpeed:
+      max: 2048.0
+    attackDamage:
+      max: 2048.0
+messages:
+  whitelist: "&0\n&0\n&0 &e&lMAINTENANCE MODE \n &4ERROR: 0x404\n&0\n&fWhite listed\
+    \ members only &bWe are adding cool stuff\n&for something seriously broke.\n&0\n\
+    &2 Join us &e>>> &bDiscord.gg/7ra2NaZd3S"
+  unknown-command: '&c&l[!]&eSERVER &3Do you even know what you are doing?'
+  server-full: "&0\n&0\n&0 &e&lOH NO! \n &4ERROR: POPULAR\n&0\n&fOMG! Are we this\
+    \ popular already? &bIf you have Purchased rank as see this, please Join Discord\n\
+    &fto If not, Were full Sorry!\n&0\n&2 Join us &e>>> &bDiscord.gg/7ra2NaZd3S"
+  outdated-client: "&0\n&0\n&0 &e&lCLIENT WARNING \n &4ERROR: 0x103\n&0\n&fPlease\
+    \ use Client version &b1.16 &fup to &b1.17\n&fto be able to join on our server!\n\
+    &0\n&2 Join us &e>>> &bDiscord.gg/7ra2NaZd3S"
+  outdated-server: |-
+    &0
+    &0
+    &0 &e&lSERVER WARNING
+     &4ERROR: 0x102
+    &0
+    &fPlease use version &b1.16 &fup to &b1.17
+    &fto be able to join on our server!
+    &0
+    &2 Join us &e>>> &bDiscord.gg/7ra2NaZd3S
+  restart: |-
+    &0
+    &0
+    &0 &e&lSERVER RESTART
+     &4ERROR: 0x101
+    &0
+    &fThe server is currently restarting.
+    &fPlease rejoin in &b12 seconds!
+    &0
+    &2 Join us &e>>> &bDiscord.gg/7ra2NaZd3S
+commands:
+  silent-commandblock-console: false
+  tab-complete: 0
+  send-namespaced: true
+  replace-commands:
+  - setblock
+  - summon
+  - testforblock
+  - tellraw
+  spam-exclusions:
+  - /skill
+  log: true
+advancements:
+  disable-saving: true
+  disabled:
+  - minecraft:story/disabled
+stats:
+  disable-saving: true
+  forced-stats: {}
+world-settings:
+  default:
+    verbose: false
+    enable-zombie-pigmen-portal-spawns: true
+    wither-spawn-sound-radius: 0
+    item-despawn-rate: 4500
+    view-distance: 4
+    hanging-tick-frequency: 100
+    end-portal-sound-radius: 0
+    zombie-aggressive-towards-villager: true
+    arrow-despawn-rate: 350
+    trident-despawn-rate: 350
+    nerf-spawner-mobs: false
+    mob-spawn-range: 4
+    dragon-death-sound-radius: 0
+    seed-village: 10387312
+    seed-desert: 14357617
+    seed-igloo: 14357618
+    seed-jungle: 14357619
+    seed-swamp: 14357620
+    seed-monument: 10387313
+    seed-shipwreck: 165745295
+    seed-ocean: 14357621
+    seed-outpost: 165745296
+    seed-endcity: 10387313
+    seed-slime: 987234911
+    seed-bastion: 30084232
+    seed-fortress: 30084232
+    seed-mansion: 10387319
+    seed-fossil: 14357921
+    seed-portal: 34222645
+    hopper-amount: 3
+    max-tnt-per-tick: 50
+    max-entity-collisions: 8
+    entity-tracking-range:
+      players: 32
+      animals: 32
+      monsters: 32
+      misc: 32
+      other: 32
+    merge-radius:
+      item: 3.5
+      exp: 4.0
+    ticks-per:
+      hopper-transfer: 8
+      hopper-check: 8
+    growth:
+      cactus-modifier: 80
+      cane-modifier: 80
+      melon-modifier: 80
+      mushroom-modifier: 80
+      pumpkin-modifier: 80
+      sapling-modifier: 60
+      beetroot-modifier: 80
+      carrot-modifier: 70
+      potato-modifier: 90
+      wheat-modifier: 110
+      netherwart-modifier: 80
+      vine-modifier: 50
+      cocoa-modifier: 80
+      bamboo-modifier: 120
+      sweetberry-modifier: 80
+      kelp-modifier: 40
+    entity-activation-range:
+      animals: 24
+      monsters: 24
+      raiders: 32
+      misc: 24
+      water: 24
+      villagers: 16
+      flying-monsters: 48
+      villagers-work-immunity-after: 100
+      villagers-work-immunity-for: 20
+      villagers-active-for-panic: true
+      tick-inactive-villagers: true
+      wake-up-inactive:
+        animals-max-per-tick: 4
+        animals-every: 1200
+        animals-for: 100
+        monsters-max-per-tick: 8
+        monsters-every: 400
+        monsters-for: 100
+        villagers-max-per-tick: 4
+        villagers-every: 600
+        villagers-for: 100
+        flying-monsters-max-per-tick: 8
+        flying-monsters-every: 200
+        flying-monsters-for: 100
+    max-tick-time:
+      tile: 50
+      entity: 50
+    squid-spawn-range:
+      min: 60.0
+    hunger:
+      jump-walk-exhaustion: 0.05
+      jump-sprint-exhaustion: 0.02
+      combat-exhaustion: 0.4
+      regen-exhaustion: 9.0
+      swim-multiplier: 0.07
+      sprint-multiplier: 0.5
+      other-multiplier: 0.0
+  worldeditregentempworld:
+    verbose: false
+players:
+  disable-saving: true
